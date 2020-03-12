@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- 
+Simple illustration to simulate the power of an unchecked pandemic.
+===================================================================
+In a pandemic outbreak, how many people will be infected if every infected person infected one person each day, starting with patient zero?
+(Based on the assumption that the spread is not contained) 
+@author : Caleb Nii Tetteh Tsuru Addy (Virus)  
+@email  : 100percentvirusdownloading@gmail.com   
+@twitter: @niitettehtsuru
+@github : 
+@codepen: https://codepen.io/niitettehtsuru/pen/dyoJwRd
+@date   : March 09,2020.
+-->
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name="description" content="Simple illustration to simulate the power of unchecked pandemics.">
+        <meta name="author" content="Caleb Nii Tetteh Tsuru Addy(Virus)" />
+        <link rel='shortcut icon' type='image/x-icon' href='img/logo.jpg'>
+        <title>Pandemic Simulation</title> 
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'> 
+        <link rel="stylesheet" href="src/bootstrap/dist/css/bootstrap.min.css">   
+        <link rel="stylesheet" href="src/select2/dist/css/select2.min.css">  
+        <link rel="stylesheet" media="screen" href='src/style.css'>  
+    </head>
+    <body>   
+        <article id="info"> 
+            <header>   
+                <h2>In a pandemic outbreak, how many people will be infected if every infected person infected one person each day, starting with patient zero?</h2> 
+                <h2>(Based on the assumption that the spread is not contained)</h2>
+                <hr>
+                <h2><strong>Number of infected persons: <span id="numOfInfectedPersons">1</span> </strong></h2> 
+                <h2><strong>Meme:                       <span id="meme"></span> </strong></h2>  
+            </header>  
+            <a href="">Github</a>
+            <a href="https://codepen.io/niitettehtsuru/pen/dyoJwRd">CodePen</a>  
+            <br>  
+            <label>Number of days since patient zero</label>
+            <select id="day" class="form-control select2" style="width: 100%;">  
+            </select> 
+        </article>   
+        <canvas id="pandemicCanvas" width="1350" height="620" style="background-color:#4C0B5F;" > 
+        </canvas>   
+        <script src="src/jquery/dist/jquery.min.js"></script> 
+        <script src="src/bootstrap/dist/js/bootstrap.min.js"></script> 
+        <script src="src/select2/dist/js/select2.full.min.js"></script>           
+        <script src="src/infectedperson.js"></script> 
+        <script src="src/index.js"></script>  
+    </body>
+</html>
